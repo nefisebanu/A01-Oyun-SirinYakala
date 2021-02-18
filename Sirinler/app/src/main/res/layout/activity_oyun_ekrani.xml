@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ekranoyun"
+    android:visibility="visible"
+    tools:context=".OyunEkrani">
+
+    <Button
+        android:id="@+id/buttonBasla"
+        android:layout_width="160dp"
+        android:layout_height="68dp"
+        android:background="#116AAA"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:onClick="start"
+        android:padding="5sp"
+        android:text="Başla"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="327dp"
+        android:layout_height="313dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sirinbaba" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sirine" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/bebeksirin" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/somurtkansirin" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/guclusirin" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ustasirin" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/suslusirin" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/ascisirin" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="skorArttir"
+            android:visibility="visible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/gozluklusirin" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textViewSkor"
+        android:layout_width="206dp"
+        android:layout_height="71dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="center"
+        android:text="Yakalanan \nŞirin Sayısı: 0"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875"
+        tools:targetApi="o" />
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/time" />
+
+        <TextView
+            android:id="@+id/textViewSure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="fill"
+            android:text="Kalan Süre : 10"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            tools:targetApi="o" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
